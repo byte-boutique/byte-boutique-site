@@ -45,11 +45,11 @@ section {
   transform: rotate(135deg);
 }
 .page-scroll {
-  @apply block px-5 py-2 uppercase text-blue-100 duration-300;
+  @apply block px-5 py-2 uppercase text-blue-900 md:text-blue-100 duration-300;
 }
 .page-scroll.active,
 .page-scroll:hover {
-  @apply text-blue-300;
+  @apply text-blue-100 md:text-blue-300;
 }
 .section-heading {
   @apply text-4xl text-gray-700 font-bold tracking-wide;

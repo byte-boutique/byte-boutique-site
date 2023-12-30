@@ -3,7 +3,8 @@
 module.exports = {
   content: [
     './*.html',
-    './assets/js/main.js'
+    './assets/js/main.js',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -13,6 +14,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    require('flowbite/plugin')
   ],
 }
