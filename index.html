@@ -41,8 +41,6 @@
     />
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
-    <!-- Tiny Slider  -->
-    <link rel="stylesheet" type="text/css" href="assets/css/tiny-slider.css" />
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
@@ -57,88 +55,60 @@
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap" class="relative">
       <!-- Navbar Start -->
-      <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
-        <div class="container mx-auto">
-          <nav
-            class="py-2 flex justify-between items-center relative duration-300"
+      <div class="container mx-auto">
+        <nav
+          class="fixed w-full z-20 top-0 start-0 py-2 flex justify-between items-center duration-300 bg-gray-800 shadow"
+        >
+          <div
+            class="w-full flex flex-wrap items-center justify-between mx-auto p-4"
           >
+            <a href="#hero-area" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img
+                src="/assets/img/logo-light.png"
+                class="h-10"
+                alt="Byte Boutique Logo"
+              />
+            </a>
             <div
-              class="w-full flex flex-wrap items-center justify-between mx-auto p-4"
+              class="items-center justify-between hidden w-full md:flex md:w-auto"
+              id="navbar-sticky"
             >
-              <a
-                href="#"
-                class="flex items-center space-x-3 rtl:space-x-reverse"
+              <ul
+                class="mr-auto justify-center text-center items-center flex flex-col p-4 md:p-0 mt-4 border md:border-none border-gray-100 rounded-lg bg-blue-100 md:bg-transparent md:flex-row md:space-x-10 rtl:space-x-reverse md:mt-0 md:border-0"
               >
-                <img
-                  src="/assets/img/logo-light.png"
-                  class="h-10"
-                  alt="Byte Boutique Logo"
-                />
-              </a>
-              <button
-                data-collapse-toggle="navbar-default"
-                type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 17 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15"
-                  />
-                </svg>
-              </button>
-              <div
-                class="hidden w-full md:block md:w-auto items-center"
-                id="navbar-default"
-              >
-                <ul
-                  class="mr-auto justify-center text-center items-center font-medium flex flex-col p-4 md:p-0 mt-4 border md:border-none border-gray-100 rounded-lg bg-blue-100 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
-                >
-                  <li class="nav-item w-full">
-                    <a
-                      class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                      href="#hero-area"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item w-full">
-                    <a
-                      class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                      href="#about"
-                      >About Us</a
-                    >
-                  </li>
-                  <li class="nav-item w-full">
-                    <a
-                      class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                      href="#services"
-                      >Services</a
-                    >
-                  </li>
-                  <li class="nav-item w-full">
-                    <a
-                      class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                      href="#contact"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-              </div>
+                <li class="nav-item flex-auto">
+                <a
+                    class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
+                    href="#hero-area"
+                    data-collapse-toggle="navbar-sticky"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item flex-auto">
+                  <a
+                    class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
+                    href="#about"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item flex-auto">
+                  <a
+                    class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
+                    href="#services"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item flex-auto">
+                  <a
+                    class="page-scroll block py-2 px-3 rounded md:rounded-none hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
+                    href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
       <!-- Navbar End -->
     </header>
@@ -148,7 +118,7 @@
 
     <section
       class="bg-cover bg-center bg-no-repeat bg-gray-600 bg-blend-multiply"
-      style="background-image: url(/assets/img/pexels-lukas-574071.jpg)"
+      style="background-image: url(/assets/img/pexels-lukas-574071.jpg)" id="hero-area"
     >
       <div class="container mx-auto text-left px-12 py-40 lg:py-56">
         <h1
@@ -405,7 +375,7 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/contact-form.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/flowbite.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
