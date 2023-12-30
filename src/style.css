@@ -9,8 +9,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-p {
-  @apply text-gray-600;
+section {
+  @apply text-gray-700;
 }
 .container {
   @apply mx-auto px-5;

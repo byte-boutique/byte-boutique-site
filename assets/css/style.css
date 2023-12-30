@@ -1227,6 +1227,16 @@ select{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-blue-100{
+  --tw-text-opacity: 1;
+  color: rgb(219 234 254 / var(--tw-text-opacity));
+}
+
+.text-blue-200{
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
+}
+
 .bg-blend-multiply{
   background-blend-mode: multiply;
 }
@@ -1239,9 +1249,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-p{
+section{
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .container{
