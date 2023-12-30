@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  @apply text-gray-600;
+}
+.container {
+  @apply mx-auto px-5;
+}
+.btn {
+  @apply text-white bg-blue-600 px-10 py-3 rounded-full duration-300;
+}
+.btn:hover {
+  @apply bg-blue-500;
+}
+.sticky {
+  @apply fixed bg-gray-800 shadow;
+}
+.collapse.show {
+  @apply block;
+}
+.toggler-icon {
+  @apply block bg-gray-700 relative duration-300;
+  height: 2px;
+  width: 30px;
+  margin: 6px 0;
+}
+.active>.toggler-icon:nth-child(1) {
+  @apply transform rotate-45;
+  top: 7px;
+}
+.active>.toggler-icon:nth-child(2) {
+  @apply opacity-0;
+}
+.active>.toggler-icon:nth-child(3) {
+  top: -8px;
+  transform: rotate(135deg);
+}
+.page-scroll {
+  @apply block px-5 py-2 uppercase text-blue-100 duration-300;
+}
+.page-scroll.active,
+.page-scroll:hover {
+  @apply text-blue-300;
+}
+.section-heading {
+  @apply text-4xl text-gray-700 font-bold tracking-wide;
+}
+
+.icon {
+  @apply mb-4 text-blue-600;
+}
+
+.service-title {
+  @apply text-gray-800 font-semibold text-lg block mb-3 uppercase;
+}
+
+.form-input {
+  @apply w-full mb-5 bg-white border border-gray-500 px-4 py-2 duration-300 outline-none
+}
+.form-input:focus {
+  @apply border-blue-600;
+}
+.contact-icon {
+  @apply w-10 h-10 flex items-center justify-center bg-blue-600 text-xl text-white rounded-full;
+}
+
+.footer-links {
+  @apply leading-9 text-gray-100 duration-300;
+}
+.footer-links:hover {
+  @apply text-blue-500;
+}
+.footer-icon {
+  @apply flex justify-center items-center w-8 h-8 bg-white rounded-full text-sm text-gray-700 duration-300;
+}
+.footer-icon:hover {
+  @apply text-white;
+}
